@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "serviceName": "Nephrologist Care",
+    "image": "https://virtuoushealth.co.uk/wp-content/uploads/2016/07/urology.jpg",
+    "fullDescription": "Nephrologists are medical professionals who diagnose, treat, and manage acute and chronic kidney problems and diseases. They also treat associated issues like high blood pressure, fluid retention, and electrolyte and mineral imbalances. In addition, these specialists are in charge of kidney dialysis treatment — both hemodialysis and peritoneal dialysis — and kidney transplants and their follow-up care. "
+  },
+  {
+    "id": 2,
+    "serviceName": "Eye Care",
+    "image": "https://www.spindeleye.com/wp-content/uploads/2019/02/Gettyimage-930864180.jpg",
+    "fullDescription": "Healthy brain function needs healthy eyesight. The brain is our most vital organ, allowing us to live complex lives. Considering that your optic nerve connects your eyes and your brain, a healthy co-dependent relationship is necessary. By keeping your eyes healthy, you keep your brain healthy – improving your overall quality of life! "
+  },
+  {
+    "id": 3,
+    "serviceName": "Pediatrician Clinic",
+    "image": "https://d2mrsnb46xvx0x.cloudfront.net/wp-content/uploads/2017/04/Healthcare-finding-pediatrician-900x500.jpg",
+    "fullDescription": "Most hospitals ask if you have a pediatrician when you go in to deliver. Your baby’s first examination may be with a hospital pediatrician or your chosen pediatrician. This depends on hospital policy and whether your pediatrician makes rounds at the hospital where you deliver, and whether your baby was born early."
+  },
+  {
+    "id": 4,
+    "serviceName": "Prenatal Care",
+    "image": "https://post.healthline.com/wp-content/uploads/2021/06/Female_Pregnant_Mask_Doctor_1200x628-facebook.jpg",
+    "fullDescription": "Prenatal care, also known as antenatal care, is a type of preventive healthcare. It is provided in the form of medical checkups, consisting of recommendations on managing a healthy lifestyle and the provision of medical information such as maternal physiological changes in pregnancy, biological changes, and prenatal nutrition including prenatal vitamins, which prevents potential health problems throughout the course of the pregnancy and promotes the mother and child's health alike"
+  },
+  {
+    "id": 5,
+    "serviceName": "Medical Counseling",
+    "image": "https://bohatala.com/wp-content/uploads/2017/07/medical-counseling.jpg",
+    "fullDescription": "During challenging times, it can really help to have sufficient personal time with a compassionate, knowledgeable physician who is experienced in family medicine and has specialized training in counseling — who listens to you, and offers caring support and expert guidance."
+  },
+  {
+    "id": 6,
+    "serviceName": "Rehabilitation Center",
+    "image": "https://mediglobus.com/wp-content/uploads/2017/09/rehabilitation-at-romatem-turkey.jpg",
+    "fullDescription": "Rehabilitation hospitals, also referred to as inpatient rehabilitation hospitals, are devoted to the rehabilitation of patients with various neurological, musculoskeletal, orthopedic, and other medical conditions following stabilisation of their acute medical issues. The industry is largely made up by independent hospitals that operate these facilities within acute care hospitals. There are also inpatient rehabilitation hospitals that offer this service in a hospital-like setting, but separate from acute care facilities. Most inpatient rehabilitation facilities are located within hospitals."
+  },
+  {
+    "id": 7,
+    "serviceName": "Eldery Care",
+    "image": "https://www.wphealthcarenews.com/wp-content/uploads/2019/09/Elderly-Care-Issues-10-Challenges-to-Elderly-Care-in-the-US-copy.jpg",
+    "fullDescription": "Elder care, often referred to as senior care, is specialized care that is designed to meet the needs and requirements of senior citizens at various stages. As such, elder care is a rather broad term, as it encompasses everything from assisted living and nursing care to adult day care, home care, and even hospice care.Although aging in itself is not a reason to consider elder care, it is usually the various diseases and physical limitations that accompany old age that prompt a discussion about elder care."
+  },
+  {
+    "id": 8,
+    "serviceName": "Competitive Doctors",
+    "image": "https://www.lablogistics.com/assets/Uploads/93b4cb00ca/LL-Post-4__ScaleWidthWzc5NV0.jpg",
+    "fullDescription": "Medical doctors, generally, tend to be competitive-minded in many ways. That’s no surprise. There’s competition throughout medical school and residency, and finding and landing the ideal job situation is a challenge. But what often goes unnoticed is that among colleagues, there’s a lot going on below the surface."
+  }
+]

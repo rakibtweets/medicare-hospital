@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Dr. Peter Parker",
+    "designation": "Neurologist",
+    "email": "parker@medicarepluse.com",
+    "phone": "01934-xxxxxx",
+    "image": "http://demo2.themewarrior.com/hospitalplus/wp-content/uploads/sites/22/2016/04/pediactirc-Doctors-e1460536658595-400x400.jpg",
+    "fullDescription": "Parker was born and raised in UK, North Way Australia He graduated from the University of British, where he completed is bachelor’s degree. His admission to the State Bar of London took place on the 10st of April, 1953.Weebles wobble but they don’t fall down. Weebles are around, don’t fall down! Weeble wobble, Weeble wobble, Weeble wobble, Weeble wobble, Weeble wobble, Weeble wobble. Don’t "
+  },
+  {
+    "id": 2,
+    "name": "Dr. Aceline Thomus",
+    "designation": "Neurologist",
+    "email": "aceline@medicarepluse.com",
+    "phone": "01934-xxxxxx",
+    "image": "https://i.pinimg.com/736x/b9/97/a5/b997a530822d0f2c03259070d4590d45.jpg",
+    "fullDescription": "Aceline was born and raised in Los Angeles, California. He graduated from the University of California, where he completed is bachelor’s degree. His admission to the State Bar of California took place on the 27th of January, 1987.Weebles wobble but they don’t fall down. Weebles are around, don’t fall down! Weeble wobble, Weeble wobble, Weeble wobble, Weeble wobble, Weeble wobble, Weeble wobble. Don’t fall down!"
+  },
+  {
+    "id": 3,
+    "name": "Dr. Nancy Lewis",
+    "designation": "Cardiology",
+    "email": "nancy@medicarepluse.com",
+    "phone": "01934-xxxxxx",
+    "image": "https://i.pinimg.com/736x/dc/04/aa/dc04aaae4d9a84ad7c4a3be7bc4e9766.jpg",
+    "fullDescription": "Nancy was born and raised in Los Angeles, California. He graduated from the University of California, where he completed is bachelor’s degree. His admission to the State Bar of California took place on the 22th of December, 1984.Weebles wobble but they don’t fall down. Weebles are around, don’t fall down! Weeble wobble, Weeble wobble, Weeble wobble, Weeble wobble, Weeble wobble, Weeble wobble. Don’t fall down!"
+  },
+  {
+    "id": 4,
+    "name": "Dr. Kirk Romanov",
+    "designation": "Cardiology",
+    "email": "kirk@medicarepluse.com",
+    "phone": "01934-xxxxxx",
+    "image": "https://i.pinimg.com/736x/29/23/ad/2923addbc0dbdf2ed76cf36e5fa11ec2.jpg",
+    "fullDescription": "Krik was born and raised in Los Angeles, California. He graduated from the University of California, where he completed is bachelor’s degree. His admission to the State Bar of California took place on the 24th of June, 1980.Weebles wobble but they don’t fall down. Weebles are around, don’t fall down! Weeble wobble, Weeble wobble, Weeble wobble, Weeble wobble, Weeble wobble, Weeble wobble. Don’t fall down!"
+  },
+  {
+    "id": 5,
+    "name": "Dr. Hooman Azmi",
+    "designation": "Dental",
+    "email": "hooman@medicarepluse.com",
+    "phone": "01934-xxxxxx",
+    "image": "https://i.pinimg.com/originals/0d/ef/10/0def1027ce5a73e8483fb3a62a0e4aa0.jpg",
+    "fullDescription": "Hooman was born and raised in Indonesia, North Way Indonesia He graduated from the University of Indonesia, where he completed is bachelor’s degree. His admission to the State Bar of London took place on the 10st of April, 1983.Weebles wobble but they don’t fall down. Weebles are around, don’t fall down! Weeble wobble, Weeble wobble, Weeble wobble, Weeble wobble, Weeble wobble, Weeble wobble. Don’t"
+  },
+  {
+    "id": 6,
+    "name": "Dr. Smith Ethan",
+    "designation": "Dental",
+    "email": "smith@medicarepluse.com",
+    "phone": "01934-xxxxxx",
+    "image": "https://i.pinimg.com/564x/61/ec/6d/61ec6df5edf68937b6597270c57e92b7.jpg",
+    "fullDescription": "Smith was born and raised in Los Angeles, California. He graduated from the University of California, where he completed is bachelor’s degree. His admission to the State Bar of California took place on the 25th of November, 1985.Weebles wobble but they don’t fall down. Weebles are around, don’t fall down! Weeble wobble, Weeble wobble, Weeble wobble, Weeble wobble, Weeble wobble, Weeble wobble. Don’t fall down!"
+  },
+  {
+    "id": 7,
+    "name": "Dr. Edward Bach",
+    "designation": "Pediatric",
+    "email": "edward@medicarepluse.com",
+    "phone": "01934-xxxxxx",
+    "image": "https://thumbs.dreamstime.com/b/doctor-expert-old-man-bluish-background-51359515.jpg",
+    "fullDescription": "Edward was born and raised in Australia, North Way Australia He graduated from the University of Australia, where he completed is bachelor’s degree. His admission to the State Bar of London took place on the 10st of April, 1953.Weebles wobble but they don’t fall down. Weebles are around, don’t fall down! Weeble wobble, Weeble wobble, Weeble wobble, Weeble wobble, Weeble wobble, Weeble wobble."
+  },
+  {
+    "id": 8,
+    "name": "Dr. William Campbell",
+    "designation": "Pediatric",
+    "email": "wiliam@medicarepluse.com",
+    "phone": "01934-xxxxxx",
+    "image": "https://thumbs.dreamstime.com/b/portrait-black-male-doctor-stethoscope-white-background-smiling-176051856.jpg",
+    "fullDescription": "William was born and raised in Los Angeles, California. He graduated from the University of California, where he completed is bachelor’s degree. His admission to the State Bar of London took place on the 25st of February, 1973.Weebles wobble but they don’t fall down. Weebles are around, don’t fall down! Weeble wobble, Weeble wobble, Weeble wobble, Weeble wobble, Weeble wobble, Weeble wobble."
+  }
+]
