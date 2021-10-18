@@ -3,13 +3,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Header from './Components/Header/Header';
 import Home from './Components/Home/Home';
-import Doctors from './Components/Doctors/Doctors';
 import Login from './Components/Login/Login';
 import Register from './Components/Register/Register';
-import Services from './Components/Services/Services';
 import About from './Components/About/About';
 import Contact from './Components/Contact/Contact';
 import AuthProvider from './Context/AuthProvider';
+import AllServices from './Components/AllServices/AllServices';
+import AllDoctors from './Components/AllDoctors/AllDoctors';
+import ServiceDetails from './Components/ServiceDetails/ServiceDetails';
 
 function App() {
   return (
@@ -25,10 +26,13 @@ function App() {
               <Home />
             </Route>
             <Route path="/doctors">
-              <Doctors />
+              <AllDoctors />
             </Route>
             <Route path="/services">
-              <Services />
+              <AllServices />
+            </Route>
+            <Route path="/serviceDetails/:id">
+              <ServiceDetails />
             </Route>
             <Route path="/about">
               <About />
