@@ -23,7 +23,7 @@ const ServiceDetails = () => {
             />
           </Col>
           <Col className=" mb-md-12 col-lg-7">
-            <h4>{selectedService[0]?.serviceName}</h4>
+            <h4 className="fw-bold">{selectedService[0]?.serviceName}</h4>
             <p>{selectedService[0]?.fullDescription}</p>
           </Col>
         </Row>

@@ -11,6 +11,7 @@ import AuthProvider from './Context/AuthProvider';
 import AllServices from './Components/AllServices/AllServices';
 import AllDoctors from './Components/AllDoctors/AllDoctors';
 import ServiceDetails from './Components/ServiceDetails/ServiceDetails';
+import DoctorDetails from './Components/DoctorDetails/DoctorDetails';
 
 function App() {
   return (
@@ -27,6 +28,9 @@ function App() {
             </Route>
             <Route path="/doctors">
               <AllDoctors />
+            </Route>
+            <Route path="/doctorDetails/:id">
+              <DoctorDetails/>
             </Route>
             <Route path="/services">
               <AllServices />

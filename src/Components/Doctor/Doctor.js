@@ -1,9 +1,10 @@
 import React from 'react';
 import { Button, Card, Col } from 'react-bootstrap';
+import { HashLink } from 'react-router-hash-link';
 import './Doctor.css';
 
 const Doctor = (props) => {
-  const { name, designation, image, fullDescription } = props.doctor;
+  const { id, name, designation, image, fullDescription } = props.doctor;
   return (
     <Col className="service-container">
       <Card className="">
@@ -14,7 +15,9 @@ const Doctor = (props) => {
             <p className="fst-italic small">{designation}</p>
             <p>{fullDescription.slice(0, 100)}</p>
           </Card.Text>
-          <Button variant="primary">Details</Button>
+          <HashLink smooth to={`/doctorDetails/${id}#details`}>
+            <Button variant="primary">Details</Button>
+          </HashLink>
         </Card.Body>
       </Card>
     </Col>
