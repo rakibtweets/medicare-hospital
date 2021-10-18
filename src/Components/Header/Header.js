@@ -1,9 +1,11 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import useAuth from '../../Hooks/useAuth';
 import './Header.css';
 
 const Header = () => {
+  const { user, userSignOut } = useAuth();
   return (
     <>
       <Navbar
@@ -37,14 +39,29 @@ const Header = () => {
                 Contact
               </Nav.Link>
             </Nav>
-            <Nav>
-              <Nav.Link as={Link} to="/login">
-                Login
-              </Nav.Link>
-              <Nav.Link as={Link} to="/register">
-                Register
-              </Nav.Link>
-            </Nav>
+            {!user?.email ? (
+              <Nav>
+                <Nav.Link as={Link} to="/login">
+                  Login
+                </Nav.Link>
+                <Nav.Link as={Link} to="/register">
+                  Register
+                </Nav.Link>
+              </Nav>
+            ) : (
+              <Nav>
+                <Nav.Link className="text-secondary">
+                  {user.displayName}
+                </Nav.Link>
+
+                <Nav.Link
+                  onClick={userSignOut}
+                  className="bg-danger rounded-pill px-3"
+                >
+                  Log Out
+                </Nav.Link>
+              </Nav>
+            )}
           </Navbar.Collapse>
         </Container>
       </Navbar>
