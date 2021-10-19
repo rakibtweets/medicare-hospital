@@ -1,0 +1,22 @@
+.slide-1 {
+  background-image: url(http://demo2.themewarrior.com/hospitalplus/wp-content/uploads/sites/22/revslider/homeslider1/slideshow-home-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  width: 100%;
+  height: 100vh;
+  opacity: 1;
+  visibility: inherit;
+  z-index: 20;
+}
+.slide-2 {
+  background-image: url(http://demo2.themewarrior.com/hospitalplus/wp-content/uploads/sites/22/revslider/homeslider1/slider-2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  width: 100%;
+  height: 100vh;
+  opacity: 1;
+  visibility: inherit;
+  z-index: 20;
+}
