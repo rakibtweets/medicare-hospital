@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaPlusCircle } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import './Footer.css';
 
@@ -7,7 +8,11 @@ const Footer = () => {
     <div className="bg-dark text-white container-fluid text-white mt-5 p-5 sticky-bottom">
       <div className="footer-info row text-white">
         <div className="col-md-6 col-12 ">
-          <h4 className="text-warning fw-bold">MEDICARE PLUS</h4>
+          <h4 className="text-success fw-bold">
+            {' '}
+            <FaPlusCircle size="1.2em" className="text-success me-2" />
+            MEDICARE PLUS
+          </h4>
           <h6>Do You Need Help With Anything?</h6>
           <p className="text-text-white">
             Receive updates of hospital information during our service
