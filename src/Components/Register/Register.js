@@ -17,9 +17,10 @@ const Register = () => {
   } = useForm();
   const onSubmit = (data) => {
     console.log('~ data', data);
-    const email = data.email;
-    const password = data.password;
-    const name = data.name;
+    const { email, password, name } = data;
+    // const email = data.email;
+    // const password = data.password;
+    // const name = data.name;
     // setName(name);
     handleRegistraion(email, password, name);
   };
