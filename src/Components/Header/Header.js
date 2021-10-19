@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
+import { FaPlusCircle } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import useAuth from '../../Hooks/useAuth';
 import './Header.css';
@@ -18,7 +19,7 @@ const Header = () => {
       >
         <Container>
           <Navbar.Brand className="fw-bold" to="#home">
-            MediCare{' '}
+            MediCare <FaPlusCircle className="text-danger" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
@@ -51,7 +52,7 @@ const Header = () => {
             ) : (
               <Nav>
                 <Nav.Link className="text-secondary">
-                  {user.displayName}
+                  {user?.displayName}
                 </Nav.Link>
 
                 <Nav.Link

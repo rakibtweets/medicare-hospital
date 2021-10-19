@@ -17,7 +17,6 @@ import Doctor from '../Doctor/Doctor';
 const DoctorDetails = () => {
   const { id } = useParams();
   const [doctors] = useDoctors();
-  console.log('~ doctors', doctors);
   const selectedDoctor = doctors?.filter(
     (doctor) => doctor.id === parseInt(id)
   );

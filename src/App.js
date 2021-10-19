@@ -12,6 +12,7 @@ import AllServices from './Components/AllServices/AllServices';
 import AllDoctors from './Components/AllDoctors/AllDoctors';
 import ServiceDetails from './Components/ServiceDetails/ServiceDetails';
 import DoctorDetails from './Components/DoctorDetails/DoctorDetails';
+import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 
 function App() {
   return (
@@ -29,15 +30,15 @@ function App() {
             <Route path="/doctors">
               <AllDoctors />
             </Route>
-            <Route path="/doctorDetails/:id">
-              <DoctorDetails/>
-            </Route>
+            <PrivateRoute path="/doctorDetails/:id">
+              <DoctorDetails />
+            </PrivateRoute>
             <Route path="/services">
               <AllServices />
             </Route>
-            <Route path="/serviceDetails/:id">
+            <PrivateRoute path="/serviceDetails/:id">
               <ServiceDetails />
-            </Route>
+            </PrivateRoute>
             <Route path="/about">
               <About />
             </Route>
