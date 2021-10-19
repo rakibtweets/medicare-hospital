@@ -4,6 +4,7 @@ import useServices from '../../Hooks/useServices';
 import { Col, Container, Row } from 'react-bootstrap';
 import Carousel from 'react-grid-carousel';
 import Service from '../Service/Service';
+import Fade from 'react-reveal/Fade';
 
 const ServiceDetails = () => {
   const { id } = useParams();
@@ -13,21 +14,23 @@ const ServiceDetails = () => {
   );
   return (
     <>
-      <Container id="details" className="service-details pt-5 mb-5">
-        <Row xs={1} lg={2} className="g-4">
-          <Col className="col-md-12 col-lg-5">
-            <img
-              className=" img-fluid"
-              src={selectedService[0]?.image}
-              alt=""
-            />
-          </Col>
-          <Col className=" mb-md-12 col-lg-7">
-            <h4 className="fw-bold">{selectedService[0]?.serviceName}</h4>
-            <p>{selectedService[0]?.fullDescription}</p>
-          </Col>
-        </Row>
-      </Container>
+      <Fade right>
+        <Container id="details" className="service-details pt-5 mb-5">
+          <Row xs={1} lg={2} className="g-4">
+            <Col className="col-md-12 col-lg-5">
+              <img
+                className=" img-fluid"
+                src={selectedService[0]?.image}
+                alt=""
+              />
+            </Col>
+            <Col className=" mb-md-12 col-lg-7">
+              <h4 className="fw-bold">{selectedService[0]?.serviceName}</h4>
+              <p>{selectedService[0]?.fullDescription}</p>
+            </Col>
+          </Row>
+        </Container>
+      </Fade>
       <Container className="mt-5">
         <h3 className="fw-bold text-center my-5">Other Services</h3>
         {/* carousel start */}
