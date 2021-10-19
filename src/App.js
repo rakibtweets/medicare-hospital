@@ -13,6 +13,7 @@ import AllDoctors from './Components/AllDoctors/AllDoctors';
 import ServiceDetails from './Components/ServiceDetails/ServiceDetails';
 import DoctorDetails from './Components/DoctorDetails/DoctorDetails';
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
@@ -52,6 +53,7 @@ function App() {
               <Register />
             </Route>
           </Switch>
+          <Footer />
         </Router>
       </AuthProvider>
     </div>
