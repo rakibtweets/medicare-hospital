@@ -18,9 +18,9 @@ const Header = () => {
         variant="dark"
       >
         <Container>
-          <Navbar.Brand className="fw-bold" to="#home">
-            MediCare <FaPlusCircle className="text-danger" />
-          </Navbar.Brand>
+          <Nav.Link as={Link} to="/home" className="fw-bold h4 text-white">
+            <FaPlusCircle size="1.5em" className="text-success" /> MediCare
+          </Nav.Link>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mx-auto">
