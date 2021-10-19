@@ -23,7 +23,7 @@ const Login = () => {
   const onSubmit = (data) => {
     const email = data.email;
     const password = data.password;
-    userEmailPasswordLogin(email, password)
+    userEmailPasswordLogin(email, password);
   };
 
   //re-direct url

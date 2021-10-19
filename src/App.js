@@ -14,6 +14,7 @@ import ServiceDetails from './Components/ServiceDetails/ServiceDetails';
 import DoctorDetails from './Components/DoctorDetails/DoctorDetails';
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 import Footer from './Components/Footer/Footer';
+import NotFound from './Components/NotFound/NotFound';
 
 function App() {
   return (
@@ -51,6 +52,9 @@ function App() {
             </Route>
             <Route path="/register">
               <Register />
+            </Route>
+            <Route path="*">
+              <NotFound />
             </Route>
           </Switch>
           <Footer />
