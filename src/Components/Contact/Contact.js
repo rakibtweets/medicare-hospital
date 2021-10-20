@@ -1,17 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Button, Modal } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
 import { FaWpforms } from 'react-icons/fa';
+import { useHistory } from 'react-router';
 import useAuth from '../../Hooks/useAuth';
 
 const Contact = () => {
   const { user } = useAuth();
+  const history = useHistory();
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => {
+    setShow(false);
+    history.push('/home');
+  };
+  const handleShow = () => setShow(true);
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) => console.log(data);
-  console.log(errors);
+  const onSubmit = (data) => {
+    handleShow();
+  };
 
   return (
     <div className="login-form w-75 mx-auto mt-2">
@@ -67,12 +78,26 @@ const Contact = () => {
         </div>
         <br />
         <div className=" d-flex justify-content-center">
-          <button
+          <Button
             className="btn btn-primary text-uppercase container-fluid"
             type="submit"
           >
             Submit
-          </button>
+          </Button>
+          <Modal show={show} onHide={handleClose} bg="primary">
+            <Modal.Header closeButton>
+              <Modal.Title>Dear, {user.displayName}</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+              You have Submited Your Contact form, As we Care We will keep in
+              touch with you
+            </Modal.Body>
+            <Modal.Footer>
+              <Button variant="secondary" onClick={handleClose}>
+                Close
+              </Button>
+            </Modal.Footer>
+          </Modal>
         </div>
       </form>
     </div>

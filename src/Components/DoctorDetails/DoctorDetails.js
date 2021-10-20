@@ -1,5 +1,5 @@
-import React from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
+import React, { useState } from 'react';
+import { Col, Container, Modal, Row, Button } from 'react-bootstrap';
 import { useParams } from 'react-router';
 import useDoctors from '../../Hooks/useDoctors';
 import './DoctorDetails.css';
@@ -21,6 +21,10 @@ const DoctorDetails = () => {
   const selectedDoctor = doctors?.filter(
     (doctor) => doctor.id === parseInt(id)
   );
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
     <>
       <Fade left>
@@ -51,9 +55,28 @@ const DoctorDetails = () => {
                 <FaLinkedinIn />
                 <FaYoutube />
               </div>
-              <button className="btn btn-primary mt-3 px-3 small">
+              <Button
+                onClick={handleShow}
+                className="btn btn-primary mt-3 px-3 small"
+              >
                 View {selectedDoctor[0]?.name} Schedules
-              </button>
+              </Button>
+              <Modal show={show} onHide={handleClose}>
+                <Modal.Header closeButton>
+                  <Modal.Title>{selectedDoctor[0]?.name}</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                  <p> Saturday to Monday: 5pm-10pm</p>
+                  <p> Tuesday to Wednesday: 9m-10pm</p>
+                  <p> Thursday: All Day</p>
+                  <p> Friday : Off Day</p>
+                </Modal.Body>
+                <Modal.Footer>
+                  <Button variant="secondary" onClick={handleClose}>
+                    Close
+                  </Button>
+                </Modal.Footer>
+              </Modal>
             </Col>
           </Row>
         </Container>
