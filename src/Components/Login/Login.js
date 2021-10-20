@@ -8,13 +8,19 @@ import { BsGithub } from 'react-icons/bs';
 import { FaLock } from 'react-icons/fa';
 
 const Login = () => {
-  const { userEmailPasswordLogin, signWithGoogle, signWithGitHub, error } =
-    useAuth();
-  //redirectiong from log page
+  const {
+    userEmailPasswordLogin,
+    signWithGoogle,
+    signWithGitHub,
+    error,
+    setError,
+    setUser,
+  } = useAuth();
+  //redirectiong from login page
   const location = useLocation();
   const history = useHistory();
   const redirectUrl = location.state?.from || '/home';
-
+  // react hooks form function
   const {
     register,
     handleSubmit,
@@ -23,10 +29,26 @@ const Login = () => {
   const onSubmit = (data) => {
     const email = data.email;
     const password = data.password;
-    userEmailPasswordLogin(email, password);
+    // userEmailPasswordLogin(email, password);
+    handleEmailPasswordLogin(email, password);
   };
 
-  //re-direct url
+  // redirectiong from login page
+  const handleEmailPasswordLogin = (email, password) => {
+    userEmailPasswordLogin(email, password)
+      .then((result) => {
+        // Signed in
+        setUser(result.user);
+        setError('');
+        history.push(redirectUrl);
+      })
+      .catch((error) => {
+        console.log(error.message);
+        setError(error.message);
+      });
+  };
+
+  //re-direct url in user login
   const handleSignWitGoogle = () => {
     signWithGoogle()
       .then((result) => {
@@ -40,13 +62,16 @@ const Login = () => {
   };
   return (
     <>
-      <div className="login-form w-50 mx-auto mt-2">
+      <div className="login-form container  mx-auto mt-2">
         <h2 className="fw-bold text-center py-2">
           <FaLock className="fs-1 mr-3" /> Account Login
         </h2>
-        <form onSubmit={handleSubmit(onSubmit)} className=" w-75 mx-auto">
+        <form
+          onSubmit={handleSubmit(onSubmit)}
+          className=" w-75 mx-auto px-3 px-lg-5"
+        >
           <input
-            className="form-control p-3"
+            className="form-control  p-3"
             type="email"
             placeholder="Your Email"
             defaultValue=""

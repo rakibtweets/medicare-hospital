@@ -23,7 +23,7 @@ const Header = () => {
           </Nav.Link>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="mx-auto">
+            <Nav className="mx-lg-auto text-center ">
               <Nav.Link as={Link} to="/home">
                 Home
               </Nav.Link>
@@ -41,7 +41,7 @@ const Header = () => {
               </Nav.Link>
             </Nav>
             {!user?.email ? (
-              <Nav>
+              <Nav className="text-center">
                 <Nav.Link as={Link} to="/login">
                   Login
                 </Nav.Link>
@@ -50,7 +50,7 @@ const Header = () => {
                 </Nav.Link>
               </Nav>
             ) : (
-              <Nav>
+              <Nav className="text-center">
                 <Nav.Link className="text-secondary">
                   {user?.displayName}
                 </Nav.Link>

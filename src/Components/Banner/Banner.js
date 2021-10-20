@@ -30,9 +30,11 @@ const Banner = () => {
           <Carousel.Caption className="text-dark"></Carousel.Caption>
         </Carousel.Item>
       </Carousel>
-      <h4 className="fw-bold text-success text-center pt-3 text-uppercase display-5">
-        Welcome To MediCare Plus
-      </h4>
+      <Fade bottom>
+        <h4 className="fw-bold text-success text-center pt-3 text-uppercase display-5">
+          Welcome To MediCare Plus
+        </h4>
+      </Fade>
     </div>
   );
 };

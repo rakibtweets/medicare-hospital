@@ -9,12 +9,9 @@ const PrivateRoute = ({ children, ...rest }) => {
 
   if (isLoading) {
     return (
-      <Spinner
-        className=" d-flex justify-content-center align-items-center"
-        animation="grow"
-        variant="danger"
-        size="3em"
-      />
+      <div className="w-25 mx-auto">
+        <Spinner animation="grow" variant="danger" size="4em" />
+      </div>
     );
   }
   return (

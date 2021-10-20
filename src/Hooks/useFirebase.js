@@ -18,34 +18,31 @@ const useFirebase = () => {
   const [user, setUser] = useState({});
   const [error, setError] = useState('');
   const [isLoading, setIsLoading] = useState(true);
-  // const [userEmail, setUserEmail] = useState('');
-  // const [userPassword, setUserPassword] = useState('');
   const auth = getAuth();
   const googleProvider = new GoogleAuthProvider();
-  const gitHubrovider = new GithubAuthProvider();
+  const gitHubProvider = new GithubAuthProvider();
   // Google Sign in
   const signWithGoogle = () => {
     return signInWithPopup(auth, googleProvider);
   };
+
   // handle github sign in
 
   const signWithGitHub = () => {
-    signInWithPopup(auth, gitHubrovider)
+    signInWithPopup(auth, gitHubProvider)
       .then((result) => {
-        console.log(result.user);
+        // console.log(result.user);
         setUser(result.user);
-        // history.push(redirectUrl);
       })
+      // Handle Errors here.
       .catch((error) => {
-        // Handle Errors here.
-        console.log(error.message);
-        // setError(error.message);
+        // console.log(error.message);
+        setError(error.message);
       });
   };
 
   // handle registraion
   const handleRegistraion = (email, password, name) => {
-    console.log(email, password);
     if (password.length < 6) {
       setError('Password must be 6 character long');
       return;
@@ -70,17 +67,16 @@ const useFirebase = () => {
   // user signIn with email and password
 
   const userEmailPasswordLogin = (email, password) => {
-    console.log(email, password);
-    return signInWithEmailAndPassword(auth, email, password)
-      .then((result) => {
-        // Signed in
-        setUser(result.user);
-        setError('');
-      })
-      .catch((error) => {
-        console.log(error.message);
-        setError(error.message);
-      });
+    return signInWithEmailAndPassword(auth, email, password);
+    // .then((result) => {
+    //   // Signed in
+    //   setUser(result.user);
+    //   setError('');
+    // })
+    // .catch((error) => {
+    //   console.log(error.message);
+    //   setError(error.message);
+    // });
   };
 
   // handling user state changes
@@ -119,6 +115,8 @@ const useFirebase = () => {
     handleRegistraion,
     userEmailPasswordLogin,
     signWithGitHub,
+    setError,
+    setUser,
   };
 };
 

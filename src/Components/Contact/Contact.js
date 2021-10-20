@@ -14,12 +14,15 @@ const Contact = () => {
   console.log(errors);
 
   return (
-    <div className="login-form w-50 mx-auto mt-5 mb-5 p-3">
+    <div className="login-form w-75 mx-auto mt-2">
       <h2 className="text-center py-2 fw-bold">
         <FaWpforms size="2em" className=" text-success fw-bold me-2" />
         Contact form
       </h2>
-      <form onSubmit={handleSubmit(onSubmit)} className=" w-75 mx-auto">
+      <form
+        onSubmit={handleSubmit(onSubmit)}
+        className=" w-auto mx-auto px-3 px-lg-5"
+      >
         <input
           type="text"
           className="form-control p-3"

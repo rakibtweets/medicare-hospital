@@ -5,14 +5,17 @@ import Fade from 'react-reveal/Fade';
 
 const FeaturedService = () => {
   return (
-    <Fade right>
-      <div className="features-container text-center container mx-auto mt-4 row gx-3">
+    <div className="features-container text-center container mx-auto mt-4 row gx-3">
+      <Fade bottom cascade>
         <h2 className="text-center fw-bolder py-2">BEST HOSPITAL IN TOWN</h2>
+
         <h5 className=" text-secondary text-center mb-5">
           When It Comes to Health Care
         </h5>
-        <div className="row g-3">
-          <div className=" features  col-md-4 col-12 col-lg-4">
+      </Fade>
+      <div className="row g-3">
+        <div className=" features  col-md-4 col-12 col-lg-4">
+          <Fade left>
             <div className="text-center card p-3">
               <div>
                 <FaUserMd className=" icon text-primary py-3" />
@@ -24,8 +27,10 @@ const FeaturedService = () => {
                 </p>
               </div>
             </div>
-          </div>
-          <div className=" features col-md-4 col-12 col-lg-4">
+          </Fade>
+        </div>
+        <div className=" features col-md-4 col-12 col-lg-4">
+          <Fade bottom>
             <div className="text-center card p-3">
               <div>
                 <FaBalanceScale className=" icon text-primary py-3" />
@@ -38,8 +43,10 @@ const FeaturedService = () => {
                 </p>
               </div>
             </div>
-          </div>
-          <div className=" features col-md-4 col-12 col-lg-4">
+          </Fade>
+        </div>
+        <div className=" features col-md-4 col-12 col-lg-4">
+          <Fade right>
             <div className=" text-center card p-3">
               <div>
                 <FaNotesMedical className=" icon text-primary py-3" />
@@ -51,10 +58,10 @@ const FeaturedService = () => {
                 </p>
               </div>
             </div>
-          </div>
+          </Fade>
         </div>
       </div>
-    </Fade>
+    </div>
   );
 };
 

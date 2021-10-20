@@ -26,11 +26,14 @@ const Register = () => {
   };
   return (
     <>
-      <div className="login-form w-50 mx-auto mt-2">
+      <div className="login-form container mx-auto mt-2">
         <h2 className="fw-bold text-center py-2">
           <FaLock className="fs-1 mr-3" /> Register Account
         </h2>
-        <form onSubmit={handleSubmit(onSubmit)} className=" w-75 mx-auto">
+        <form
+          onSubmit={handleSubmit(onSubmit)}
+          className=" w-75 mx-auto px-3 px-lg-5"
+        >
           <input
             className="form-control p-3"
             type="text"

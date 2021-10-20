@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div className="bg-dark text-white container-fluid text-white mt-5 p-5 sticky-bottom">
       <div className="footer-info row text-white">
-        <div className="col-md-6 col-12 ">
+        <div className="col-md-6 col-12 text-center text-lg-start">
           <h4 className="text-success fw-bold">
             {' '}
             <FaPlusCircle size="1.2em" className="text-success me-2" />
@@ -17,7 +17,7 @@ const Footer = () => {
           <p className="text-text-white">
             Receive updates of hospital information during our service
           </p>
-          <div className="search-area w-75 input-group">
+          <div className="input-group  w-75 mx-auto mx-lg-0 mb-5">
             <input
               className="form-control "
               type="text"
@@ -28,7 +28,7 @@ const Footer = () => {
         </div>
         <div className="col-md-6 col-12">
           <div className="row">
-            <div className="col-md-6 col-12 d-flex justify-content-center align-items-center">
+            <div className="col-md-6 col-12 d-none d-lg-block d-flex justify-content-center align-items-center">
               <div className="links">
                 <p className="text-white fw-bold">Layout</p>
                 <div>
