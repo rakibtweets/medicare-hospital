@@ -24,7 +24,7 @@
 
 - [This project is about MediCare Hospital Services](#threeColumn)
 - [There are foure five is this page (Home,About,Doctors,Contact,Services)](#react-router)
-- [There are three private Route (DoctorsDetials,Contact,ServiceDetials)](#react-private-route)
+- [There are three private Route (Doctors Detials,Contact,ServiceDetials)](#react-private-route)
 - [Private Route redirecting using in the projece](#react-private-route)
 - [Header and footer section fixed on every pages](#header-footer)
 - [All features service has shown in home page](#features)
@@ -35,4 +35,4 @@
 - [React icon packed used to use icons](#react-rating)
 - [React Carousel component used in this project in reviews route](#react-carousel)
 - [Review details has been shown in reviews route](#reviews-details)
-- [if there is no availd route not found route page will open](#NotFout-route)
+- [if there is no matched route not found page will open](#NotFout-route)
