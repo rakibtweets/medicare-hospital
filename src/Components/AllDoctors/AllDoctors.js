@@ -9,7 +9,7 @@ const AllDoctors = () => {
 
   return (
     <Container fluid className="pt-5 services-container">
-      <Fade left>
+      <Fade bottom>
         <h2 className="text-center fw-bolder py-3">Our Doctors</h2>
       </Fade>
 
