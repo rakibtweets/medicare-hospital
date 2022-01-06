@@ -10,21 +10,22 @@ const Services = () => {
   const [services] = useServices();
 
   return (
-    <Fade left>
-      <Container fluid className="pt-5 services-container">
+    <Container fluid className="pt-5 services-container">
+      <Fade bottom>
         <h2 className="text-center fw-bolder py-3">Our Services</h2>
-        <Container>
-          <Link className="nav-link my-3 " to="/services">
-            View All Services
-          </Link>
-          <Row xs={1} md={2} lg={3} className="g-4">
-            {services.slice(0, 6).map((service) => (
-              <Service key={service.id} service={service} />
-            ))}
-          </Row>
-        </Container>
+      </Fade>
+      <Container>
+        <Link className="nav-link my-3 " to="/services">
+          View All Services
+        </Link>
+
+        <Row xs={1} md={2} lg={3} className="g-4">
+          {services.slice(0, 6).map((service) => (
+            <Service key={service.id} service={service} />
+          ))}
+        </Row>
       </Container>
-    </Fade>
+    </Container>
   );
 };
 
