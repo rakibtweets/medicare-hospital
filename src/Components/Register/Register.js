@@ -76,25 +76,24 @@ const Register = () => {
           <p className="text-center text-secondary py-2">
             Or connect with social media
           </p>
-
-          <div className="d-flex flex-column align-items-center gap-2 justify-content-lg-around">
-            <button onClick={signWithGoogle} className="btn media-icon">
-              <FcGoogle className="fs-3 me-2" /> Sign in with Google
-            </button>
-            <button
-              onClick={signWithGitHub}
-              className="btn text-white bg-dark github-icon"
-            >
-              <BsGithub className="fs-3 me-2" /> Sign in with Github
-            </button>
-            <p className="text-center">
-              All ready have account ?{' '}
-              <Link className=" text-decoration-none" to="/login">
-                Login Here
-              </Link>
-            </p>
-          </div>
         </form>
+        <div className="d-flex flex-column align-items-center gap-2 justify-content-lg-around">
+          <button onClick={signWithGoogle} className="btn media-icon">
+            <FcGoogle className="fs-3 me-2" /> Sign in with Google
+          </button>
+          <button
+            onClick={signWithGitHub}
+            className="btn text-white bg-dark github-icon"
+          >
+            <BsGithub className="fs-3 me-2" /> Sign in with Github
+          </button>
+          <p className="text-center">
+            All ready have account ?{' '}
+            <Link className=" text-decoration-none" to="/login">
+              Login Here
+            </Link>
+          </p>
+        </div>
       </div>
     </>
   );
